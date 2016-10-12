@@ -1,8 +1,7 @@
 package org.usfirst.frc.team2363.robot.commands.drivetrain;
 
 import edu.wpi.first.wpilibj.command.Command;
-import static org.usfirst.frc.team2363.robot.Robot.drivetrain;
-import static org.usfirst.frc.team2363.robot.Robot.oi;
+import static org.usfirst.frc.team2363.robot.Robot.*;
 
 public abstract class AbstractButterflyDrive extends Command {
 	

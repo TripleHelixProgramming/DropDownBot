@@ -4,6 +4,7 @@ import static org.usfirst.frc.team2363.robot.RobotMap.*;
 
 import org.usfirst.frc.team2363.robot.commands.drivetrain.TractionDrive;
 
+import edu.wpi.first.wpilibj.CANTalon;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.DoubleSolenoid.Value;
 import edu.wpi.first.wpilibj.RobotDrive;
@@ -13,10 +14,10 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class Drivetrain extends Subsystem {
 
-	private SpeedController frontLeft = new Talon(FRONT_LEFT_TALON_CHANNEL);
-	private SpeedController frontRight = new Talon(FRONT_RIGHT_TALON_CHANNEL);
-	private SpeedController rearLeft = new Talon(REAR_LEFT_TALON_CHANNEL);
-	private SpeedController rearRight = new Talon(REAR_RIGHT_TALON_CHANNEL);
+	private SpeedController frontLeft = new CANTalon(FRONT_LEFT_TALON_CHANNEL);
+	private SpeedController frontRight = new CANTalon(FRONT_RIGHT_TALON_CHANNEL);
+	private SpeedController rearLeft = new CANTalon(REAR_LEFT_TALON_CHANNEL);
+	private SpeedController rearRight = new CANTalon(REAR_RIGHT_TALON_CHANNEL);
 	
 	private DoubleSolenoid frontOmni = new DoubleSolenoid(FRONT_DROPDOWN_1, FRONT_DROPDOWN_2);
 	private DoubleSolenoid rearOmni = new DoubleSolenoid(REAR_DROPDOWN_1, REAR_DROPDOWN_2);

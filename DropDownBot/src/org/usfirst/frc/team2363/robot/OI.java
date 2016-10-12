@@ -2,8 +2,8 @@ package org.usfirst.frc.team2363.robot;
 
 import static org.usfirst.frc.team2363.robot.RobotMap.*;
 
-import org.usfirst.frc.team2363.robot.commands.ShiftCommand;
 import org.usfirst.frc.team2363.robot.commands.drivetrain.OmniDrive;
+import org.usfirst.frc.team2363.robot.commands.drivetrain.ShiftCommand;
 import org.usfirst.frc.team2363.robot.commands.drivetrain.TractionDrive;
 
 import edu.wpi.first.wpilibj.Joystick;
@@ -27,11 +27,11 @@ public class OI {
 	}
 	
 	public boolean isFrontDeployed() {
-		return ps4Controller.getRawAxis(5) < -0.6;
+		return ps4Controller.getRawAxis(RIGHT_STICK_Y) < -0.6;
 	}
 	
 	public boolean isRearDeployed() {
-		return ps4Controller.getRawAxis(5) > 0.6;
+		return ps4Controller.getRawAxis(RIGHT_STICK_Y) > 0.6;
 	}
 	
 	public double getThrottle() {
