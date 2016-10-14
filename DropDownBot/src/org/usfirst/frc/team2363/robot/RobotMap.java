@@ -47,10 +47,10 @@ public class RobotMap {
 	public static final int REAR_RIGHT_TALON_CHANNEL = 3;
 	
 	//Solenoids
-	public static final int FRONT_DROPDOWN_1 = 1;
-	public static final int FRONT_DROPDOWN_2 = 6;
-	public static final int REAR_DROPDOWN_1 = 2;
-	public static final int REAR_DROPDOWN_2 = 5;
+	public static final int FRONT_DROPDOWN_1 = 6;
+	public static final int FRONT_DROPDOWN_2 = 1;
+	public static final int REAR_DROPDOWN_1 = 5;
+	public static final int REAR_DROPDOWN_2 = 2;
 	public static final int SHIFTER_1 = 0;
 	public static final int SHIFTER_2 = 7;
 }
